@@ -33,6 +33,8 @@ project-root/
 │       └── main.jsx         # Entry point
 │
 ├── README.md
+├── requirements.txt file
+├── image.png
 └── system_design.md
 ```
 
