@@ -20,9 +20,9 @@ This system is a chatbot web application that allows users to interact with a la
 * Response: Sends JSON { "response": "..." } back to frontend.
 
 ### File Structure
-
+```
 project-root/
-│
+|
 ├── backend/
 │   ├── main.py              # FastAPI server
 │   └── orchestrator.py      # Logic to call LLM and format response
@@ -33,20 +33,21 @@ project-root/
 │       └── main.jsx         # Entry point
 │
 ├── README.md
-└── system_design.md 
+└── system_design.md
+```
 
 ### Technologies Used
 
-Frontend -> React, Web Speech API
-Backend -> FastAPI
-LLM -> Ollama model
-Speech-to-Text -> Web Speech API (browser-native)
-Text-to-Speech -> SpeechSynthesisUtterance
+* Frontend -> React, Web Speech API
+* Backend -> FastAPI
+* LLM -> Ollama model
+* Speech-to-Text -> Web Speech API (browser-native)
+* Text-to-Speech -> SpeechSynthesisUtterance
 
 ### Performance & Scalability
 
-Scalability -> Backend can be containerized and scaled behind a load balancer
-Latency -> LLM calls can be slow — consider caching frequent responses
+* Scalability -> Backend can be containerized and scaled behind a load balancer
+* Latency -> LLM calls can be slow — consider caching frequent responses
 
 
 
